@@ -105,7 +105,6 @@ header .header-text a {
 	padding: 1.5vh 3vw;
 	font-weight: bold;
 	font-size: var(--button-size);
-	color: var(--black-color);
 }
 
 #content {
