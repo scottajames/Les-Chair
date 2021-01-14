@@ -260,7 +260,7 @@ header .header-text a {
 	header nav li a {
 	text-decoration: none;
 	color: var(--white-color);
-	font-size: var(--button-size);
+	font-size: var(--text-size-1);
 	font-weight: bold;
 	margin: 5px;
 	position: relative;
