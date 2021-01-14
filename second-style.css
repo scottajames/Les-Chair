@@ -256,8 +256,14 @@ header .header-text a {
 	height: 35vh;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 705px) {
 	header nav li a {
-	display: none;
+	text-decoration: none;
+	color: var(--white-color);
+	font-size: var(--button-size);
+	font-weight: bold;
+	margin: 5px;
+	position: relative;
+	top: 5.5vh;
 }
 }
