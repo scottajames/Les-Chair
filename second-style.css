@@ -3,7 +3,7 @@
 	--off-white-color: #F6F6F6;
 	--black-color: #3e3e3e;
 	--blue-color: #21386A;
-	--other-color: #EEB750;
+	--other-color: #E8BD30;
 	--text-size-1: 2.4vmin;
 	--text-size-2: 3.2vmin;
 	--button-size: 2vmin;
@@ -91,3 +91,39 @@ header a:hover {
 	padding: 1.5vh 3vw;
 }
 
+#content {
+	width: 60vw;
+	position: absolute;
+	left: 20vw;
+}
+
+.about {
+	position: relative;
+	top: 10vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	grid-gap: 0px 0px;
+	grid-template-areas:
+	"about-box about-image";
+}
+
+.about-box p {
+	font-size: var(--text-size-1);
+	background-color: var(--other-color);
+	color: var(--white-color);
+	height: 18vh;
+	position: relative;
+	top: 12vh;
+	left: 5vw;
+	padding: 3vw 3vh;
+}
+
+.about-box span {
+	font-size: var(--text-size-2);
+}
+
+.about-image img {
+	width: 30vw;
+	height: 40vh;
+}
