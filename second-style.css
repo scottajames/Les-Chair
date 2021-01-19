@@ -64,6 +64,10 @@ header a:hover {
 	left: 15vw;
 }
 
+.animate__animated.animate__fadeIn {
+	animation-duration: 2s;
+}
+
 .header-text h1 {
 	position: absolute;
 	top: 35vh;
@@ -86,3 +90,4 @@ header a:hover {
 	border: none;
 	padding: 1.5vh 3vw;
 }
+
