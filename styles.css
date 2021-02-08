@@ -5,8 +5,8 @@
   --grey-color: #AAAAAA;
   --other-color: #EEB750;
   --text-size-0: 2vmin;
-  --text-size-1: 2.4vmin;
-  --text-size-2: 3.2vmin;
+  --text-size-1: 2.5vmin;
+  --text-size-2: 3.5vmin;
 }
 
 * {
@@ -128,12 +128,14 @@ img {
     "about-text about-image";
   grid-area: about;
   position: relative;
-  top: 17.5vh;
+  top: 15vh;
 }
 .about-text { grid-area: about-text;
   position: relative;
-  top: 15vh;
-  left: 2.5vw;
+  top: 20vh;
+  left: 5vw;
+  width: 35vw;
+  height: 40vh;
 }
 .about-text p {
   font-size: var(--text-size-1);
@@ -183,6 +185,7 @@ img {
   padding-bottom: 5vh;
 }
 .services-text a {
+  font-size: var(--text-size-0);
   background-color: var(--other-color);
   color: var(--white-color);
   border-radius: 5px;
