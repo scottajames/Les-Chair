@@ -248,6 +248,15 @@ header a:hover {
   font-size: var(--text-size-0);
   color: var(--grey-color);
   width: 30vw;
+  padding-bottom: 5vh;
+}
+.awards-text a {
+  font-size: var(--text-size-0);
+  background-color: var(--other-color);
+  color: var(--white-color);
+  border-radius: 5px;
+  padding: 1.5vh 3vw;
+  text-decoration: none;
 }
 .awards-image { grid-area: awards-image;
   text-align: center;
