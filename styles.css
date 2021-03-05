@@ -16,6 +16,11 @@
   font-family: 'Noto Sans', sans-serif;
 }
 
+img { 
+  width: 30vw;
+  height: 40vh;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -52,7 +57,7 @@ header a:hover {
 /* Header Content */
 
 .header-image {
-  background-image: url(background-2.png);
+  background-image: url(background.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -109,10 +114,6 @@ header a:hover {
     left: 15vw;
     width: 70vw;
 }
-img { 
-  width: 30vw;
-  height: 40vh;
-}
 
 
 
@@ -128,7 +129,8 @@ img {
     "about-text about-image";
   grid-area: about;
   position: relative;
-  top: 15vh;
+  top: 10vh;
+  height: 70vh;
 }
 .about-text { grid-area: about-text;
   position: relative;
@@ -159,14 +161,13 @@ img {
   grid-template-areas:
     "services-text services-detailed";
   grid-area: services;
-  width: 90%;
-  height: 80vh;
   background-color: var(--off-white-color);
-  padding: 10vh;
 }
 .services-text {
   grid-area: services-text;
-  padding: 3vw;
+  padding: 5vw;
+  justify-content: center;
+  align-self: center;
 }
 .services-text h2 {
   color: var(--other-color);
@@ -174,7 +175,7 @@ img {
 }
 .services-text span {
   padding-bottom: 1vw;
-  border-bottom: solid 3px var(--other-color);
+  border-bottom: solid 2px var(--other-color);
 }
 .services-text b {
   font-size: var(--text-size-1);
@@ -195,60 +196,25 @@ img {
 }
 
 .services-detailed {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-gap: 3vh 1.5vw;
-  grid-template-areas:
-    "service_1 service_2"
-    "service_3 service_4";
   grid-area: services-detailed;
+  padding: 5vw;
+  justify-content: center;
+  align-self: center;
 }
 .services-detailed i {
-  color: var(--other-color);
   font-size: var(--text-size-2);
+  color: var(--other-color);
+  float: left;
+  margin-right: 1vw;
 }
 .services-detailed h2 {
-  color: var(--black-color);
   font-size: var(--text-size-1);
 }
 .services-detailed p {
-  color: var(--grey-color);
   font-size: var(--text-size-0);
+  color: var(--grey-color);
 }
 
-.service_1 {
-  grid-area: service_1;
-  background-color: white;
-  text-align: center;
-  box-shadow: 0px 0px 45px -10px rgba(0,0,0,0.5);
-  width: 100%;
-  height: 100%;
-}
-.service_2 {
-  grid-area: service_2;
-  background-color: white;
-  text-align: center;
-  box-shadow: 0px 0px 45px -10px rgba(0,0,0,0.5);
-  width: 100%;
-  height: 100%;
-}
-.service_3 {
-  grid-area: service_3;
-  background-color: white;
-  text-align: center;
-  box-shadow: 0px 0px 45px -10px rgba(0,0,0,0.5);
-  width: 100%;
-  height: 100%;
-}
-.service_4 {
-  grid-area: service_4;
-  background-color: white;
-  text-align: center;
-  box-shadow: 0px 0px 45px -10px rgba(0,0,0,0.5);
-  width: 100%;
-  height: 100%;
-}
 
 
 
@@ -257,7 +223,8 @@ img {
 
 .awards {
   position: relative;
-  top: 17.5vh;
+  top: 10vh;
+  height: 10vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
@@ -267,19 +234,23 @@ img {
   grid-area: awards;
 }
 
-.awards-text { grid-area: awards-text; 
+.awards-text { grid-area: awards-text;
   position: relative;
-  top: 2vw;}
+  left: 5vw;
+  justify-content: center;
+  align-self: center;
+}
 .awards-text h2 {
   font-size: var(--text-size-1);
   color: var(--other-color);
-  padding: 1vw;
 }
 .awards-text p {
   font-size: var(--text-size-0);
   color: var(--grey-color);
-  padding: 1vw;
-  padding-right: 5vw;
+  width: 30vw;
 }
-
-.awards-image { grid-area: awards-image; }
+.awards-image { grid-area: awards-image;
+  text-align: center;
+  justify-content: center;
+  align-self: center;
+}
