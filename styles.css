@@ -153,6 +153,7 @@ header a:hover {
 
 
 /* services element */
+
 .services {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -218,7 +219,6 @@ header a:hover {
 
 
 
-
 /* awards element */
 
 .awards {
@@ -262,4 +262,47 @@ header a:hover {
   text-align: center;
   justify-content: center;
   align-self: center;
+}
+
+
+
+
+/* footer content */
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 0px 0px;
+  grid-template-areas:
+    "contact fb-page";
+}
+.fb-page { grid-area: fb-page;}
+#contact { grid-area: contact;}
+h3 {
+  color: var(--other-color);
+  font-size: var(--text-size-2);
+}
+input {
+  width: 25vw;
+  font-size: var(--text-size-0);
+  padding-left: 10px;
+  margin-bottom: 1vh;
+}
+textarea {
+  width: 25vw;
+  font-size: var(--text-size-0);
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 1vh;
+  resize: none;
+}
+footer i {
+  color: #3b5998;
+  font-size: var(--text-size-2);
+  margin-bottom: 2.5vh;
+}
+
+footer i:hover {
+  color: #4E69A2;
 }
