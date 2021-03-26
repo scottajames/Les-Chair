@@ -270,39 +270,72 @@ header a:hover {
 /* footer content */
 
 footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-gap: 0px 0px;
-  grid-template-areas:
-    "contact fb-page";
-}
-.fb-page { grid-area: fb-page;}
-#contact { grid-area: contact;}
-h3 {
-  color: var(--other-color);
-  font-size: var(--text-size-2);
-}
-input {
-  width: 25vw;
-  font-size: var(--text-size-0);
-  padding-left: 10px;
-  margin-bottom: 1vh;
-}
-textarea {
-  width: 25vw;
-  font-size: var(--text-size-0);
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-bottom: 1vh;
-  resize: none;
-}
-footer i {
-  color: #3b5998;
-  font-size: var(--text-size-2);
-  margin-bottom: 2.5vh;
+  background-image: url('footer.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
+  width: 100vw;
 }
 
-footer i:hover {
-  color: #4E69A2;
+#footer_container {
+  position: relative;
+  top: 7.5vh;
+  background: white;
+  width: 60vw;
+  height: 80vh;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  align-self: center;
+}
+#contact h3 {
+  font-size: var(--text-size-2);
+  margin: 1vh;
+}
+#contact span {
+  border-bottom: 2px solid black;
+}
+#contact p {
+  margin: 0 auto;
+  max-width: 30vw;
+  font-size: var(--text-size-0);
+}
+input {
+  width: 20vw;
+  font-size: var(--text-size-0);
+  border-radius: 5px;
+  border: 1px solid #666666;
+  padding-left: 5px;
+  margin: 1vw;
+}
+textarea {
+  display: block;
+  font-size: var(--text-size-0);
+  margin: 0 auto;
+  width: 43vw;
+  height: 20vh;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 1px solid #666666;
+  border-radius: 5px;
+  resize: none;
+}
+#submit {
+  font-size: var(--text-size-0);
+  background-color: var(--other-color);
+  color: var(--white-color);
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  width: 12vw;
+  position: relative;
+  left: -15.7vw;
+  padding: 1.5vh 3vw;
+}
+#submit:hover {
+  cursor: pointer;
+}
+#contact i {
+  font-size: var(--text-size-2);
+  color: #3b5998;
 }
