@@ -283,12 +283,6 @@ footer {
   height: 80vh;
   margin: 0 auto;
   text-align: center;
-  position: relative;
-  top: 10vh;
-}
-#contact {
-  position: relative;
-  top: 10vh;
 }
 #contact h3 {
   font-size: var(--text-size-2);
@@ -304,24 +298,20 @@ footer {
   padding-bottom: 5vh;
 }
 input {
-  width: 20vw;
   font-size: var(--text-size-0);
-  border-radius: 2px;
-  border: 1px solid #666666;
+  width: 15vw;
   padding-left: 5px;
   padding-right: 5px;
-  margin: 1vw;
+  margin: 2vh 1vw;
 }
 textarea {
   display: block;
   font-size: var(--text-size-0);
-  margin: 0 auto;
-  width: 43vw;
   height: 20vh;
+  width: 36vw;
   padding-left: 5px;
   padding-right: 5px;
-  border: 1px solid #666666;
-  border-radius: 2px;
+  margin: 0 auto;
   resize: none;
 }
 #submit {
@@ -329,12 +319,9 @@ textarea {
   background-color: var(--other-color);
   color: var(--white-color);
   border: none;
-  border-radius: 5px;
   text-align: center;
-  width: 12vw;
-  position: relative;
-  left: -15.7vw;
-  padding: 1.5vh 3vw;
+  padding: 0.75vh 1.5vw;
+  border-radius: 5px;
 }
 #submit:hover {
   cursor: pointer;
