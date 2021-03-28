@@ -278,19 +278,21 @@ footer {
 }
 
 #footer_container {
-  position: relative;
-  top: 7.5vh;
   background: white;
   width: 60vw;
   height: 80vh;
   margin: 0 auto;
   text-align: center;
-  justify-content: center;
-  align-self: center;
+  position: relative;
+  top: 10vh;
+}
+#contact {
+  position: relative;
+  top: 10vh;
 }
 #contact h3 {
   font-size: var(--text-size-2);
-  margin: 1vh;
+  margin-bottom: 1vh;
 }
 #contact span {
   border-bottom: 2px solid black;
@@ -299,13 +301,15 @@ footer {
   margin: 0 auto;
   max-width: 30vw;
   font-size: var(--text-size-0);
+  padding-bottom: 5vh;
 }
 input {
   width: 20vw;
   font-size: var(--text-size-0);
-  border-radius: 5px;
+  border-radius: 2px;
   border: 1px solid #666666;
   padding-left: 5px;
+  padding-right: 5px;
   margin: 1vw;
 }
 textarea {
@@ -317,7 +321,7 @@ textarea {
   padding-left: 5px;
   padding-right: 5px;
   border: 1px solid #666666;
-  border-radius: 5px;
+  border-radius: 2px;
   resize: none;
 }
 #submit {
