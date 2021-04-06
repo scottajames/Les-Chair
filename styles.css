@@ -16,11 +16,6 @@
   font-family: 'Noto Sans', sans-serif;
 }
 
-img { 
-  width: 30vw;
-  height: 40vh;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -147,6 +142,12 @@ header a:hover {
 }
 .about-text span {
   font-size: var(--text-size-2);
+}
+.about-image img { grid-area: about-image;
+  position: relative;
+  left: -5vw;
+  width: 35vw;
+  height: 40vh;
 }
 
 
@@ -304,7 +305,7 @@ textarea {
   font-size: var(--text-size-0);
   margin: 2vh 0vw;
 }
-#submit input {
+#submit {
   position: relative;
   left: -15vw;
   text-align: center;
