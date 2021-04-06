@@ -304,13 +304,14 @@ textarea {
   font-size: var(--text-size-0);
   margin: 2vh 0vw;
 }
-#submit input {
+#submit {
   position: relative;
   left: -15vw;
   text-align: center;
   border: none;
   height: 5vh;
   width: 10vw;
+  padding: 5px;
   background-color: var(--other-color);
   color: white;
 }
