@@ -309,10 +309,11 @@ textarea {
   left: -15vw;
   text-align: center;
   border: none;
+  border-radius: 0px;
   height: 5vh;
   width: 10vw;
+  background-color: var(--other-color);
   color: white;
-  background: var(--other-color);
 }
 #submit:hover {
   cursor: pointer;
