@@ -9,6 +9,10 @@
   --text-size-2: 3.5vmin;
 }
 
+input, textarea, select {
+   -webkit-appearance: none;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -101,6 +105,7 @@ header a:hover {
 /* Body Content */
 
 /* Parent element */
+
 #content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -137,7 +142,6 @@ header a:hover {
   top: 20vh;
   left: 5vw;
   width: 35vw;
-  height: 40vh;
 }
 .about-text p {
   font-size: var(--text-size-1);
