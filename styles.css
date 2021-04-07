@@ -264,6 +264,8 @@ header a:hover {
   text-align: center;
   justify-content: center;
   align-self: center;
+  width: 30vw;
+  height: 30vh;
 }
 
 
