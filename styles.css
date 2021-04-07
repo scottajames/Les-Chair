@@ -20,11 +20,6 @@ input, textarea, select {
   font-family: 'Noto Sans', sans-serif;
 }
 
-img { 
-  width: 30vw;
-  height: 40vh;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -134,12 +129,11 @@ header a:hover {
     "about-text about-image";
   grid-area: about;
   position: relative;
-  top: 10vh;
-  height: 70vh;
+  top: 10.5vh;
 }
 .about-text { grid-area: about-text;
   position: relative;
-  top: 20vh;
+  top: 15.5vh;
   left: 5vw;
   width: 35vw;
 }
@@ -151,6 +145,10 @@ header a:hover {
 }
 .about-text span {
   font-size: var(--text-size-2);
+}
+.about-image img { grid-area: about-image;
+  width: 35vw;
+  height: 31vh;
 }
 
 
