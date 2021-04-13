@@ -330,3 +330,6 @@ textarea {
   margin: 1vh auto;
   margin-bottom: 9vh;
 }
+#CookieDeclaration {
+  display: none;
+}
