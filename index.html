@@ -8,6 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Greeting Cards</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="9e4f5908-f895-44dd-88fd-d2b7882323e8" data-blockingmode="auto" type="text/javascript"></script>
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 <link rel=stylesheet type="text/css" href="styles.css">
@@ -34,14 +35,15 @@
 
     <!-- Header text -->
     <div class="header-text">
-      <h1 class="animate__animated animate__fadeIn">Neque porro<br>
-        <span>quisquam est qui dolorem</span>
-          <br>ipsum quia dolor sit amet consectetur<br>
+      <h1>Sandra's Crafts<br>
+        <span>Cards made with love</span>
+          <br>All events all occasions<br>
             <a href="#contact">Contact</a></h1>
     </div>
 
   </div>
 </header>
+<script id="CookieDeclaration" src="https://consent.cookiebot.com/9e4f5908-f895-44dd-88fd-d2b7882323e8/cd.js" type="text/javascript" async></script>
 
 <main>
 
@@ -83,7 +85,7 @@
     <div id="contact">
       <h3>GET IN CONTACT</h3>
       <p>Please use English language for your messages. If you have a problem with English, you can use <a href="https://translate.google.co.uk/" target="_blank">Google Translate</a></p>
-      <form>
+      <form id="contact-form" action="form.php" method="POST">
         <input type="text" placeholder="Name" id="name" name="name" required>
         <input type="text" placeholder="Email" id="email" name="email" required>
         <textarea type="text" placeholder="Message..." id="message" name="message" rows="4"></textarea>
