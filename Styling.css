@@ -61,7 +61,6 @@ body {
 }
 #Head-Content { 
 	grid-area: 1 / 1 / 2 / 2;
-	text-align: center;
 }
 #Logo h1 {
 	position: relative;
@@ -72,9 +71,11 @@ body {
 	text-align: center;
 }
 
-
+#Search {
+	text-align: center;
+}
 #Search input {
-	width: 100%;
+	width: 90%;
 	border: none;
 	border-radius: 5px;
 	border: 2px solid grey;
@@ -83,17 +84,11 @@ body {
 	background-color: #303030;
 	color: grey;
 }
-#Search button {
-	display: none;
-	position: relative;
-	left: -30px;
-	color: grey;
-	font-size: var(--text-size-1);
-}
 
 #Button {
 	position: relative;
 	top: 1vh;
+	text-align: center;
 }
 #Button button {
 	color: var(--white-color);
@@ -103,25 +98,34 @@ body {
 #Main-Nav {
 	position: relative;
 	top: 1vh;
+	text-align: center;
 }
 #Main-Nav h1 {
 	color: var(--other-color);
 	font-size: var(--text-size-2);
 	font-weight: lighter;
+	text-align: center;
 }
 #Main-Nav a {
 	color: var(--white-color);
 	font-size: var(--text-size-1);
+	position: relative;
+	left: -1vmin;
+	display: block;
 }
 #Main-Nav i {
 	font-size: var(--text-size-1);
 	color: white;
+	float: left;
+	position: relative;
+	left: 2vmin;
 }
 #Main-Nav a:hover i {
 	color: var(--hover-color);
 }
 
 #Load-More {
+	text-align: center;
 }
 #Load-More button {
 	position: relative;
