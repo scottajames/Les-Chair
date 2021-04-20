@@ -141,18 +141,17 @@ body {
 }
 #Body-Content { grid-area: 1 / 2 / 2 / 3; }
 #Categories { grid-area: 1 / 2 / 2 / 3; }
-#Sub-Categories-1 {
-	position: absolute;
-	top: 200px;
-	left: 350px;
+#Sub-Categories {
+	position: relative;
+	top: 15vh;
 }
-
-#Sub-Categories-1 a {
+#Sub-Categories a {
+	font-size: var(--text-size-1);
+	color: white;
 	background: #CB2C52;
+	padding: 5px;
 	border-radius: 5px;
-	padding: 15px;
 }
-
-#Sub-Categories-1 a:hover {
+#Sub-Categories a:hover {
 	background: #D04163;
 }
