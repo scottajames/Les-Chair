@@ -97,7 +97,7 @@ body {
 }
 .VoA {
 	width: 25vw;
-	height: 20vh;
+	height:10vh;
 	border: none;
 	font-family: 'Roboto', sans-serif;
 	font-size: var(--text-size-2);
@@ -112,7 +112,7 @@ body {
 .Contact {
 	float: right;
 	width: 15vw;
-	height: 20vh;
+	height: 10vh;
 	border: none;
 	font-family: 'Roboto', sans-serif;
 	font-size: var(--text-size-2);
