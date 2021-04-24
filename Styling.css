@@ -1,29 +1,20 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Bungee&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab&display=swap');
 :root {
-  --white-color: white;
-  --black-color: black;
+  --white-color: #FFFFFF;
+  --black-color: #1A1A1A;
   --other-color: #CB2C52;
   --hover-color: #D04163;
   --text-size-0: 1vmin;
-  --text-size-1: 2vmin;
-  --text-size-2: 3vmin;
-}
-
-::-webkit-scrollbar {
-  width: 3px;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #333;
-  border-radius: 50px;
+  --text-size-1: 1.5vmin;
+  --text-size-2: 2vmin;
 }
 
 * {
 	padding: 0;
 	margin: 0;
 	outline: none;
+	font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
 }
 *:focus {
 	outline: none;
@@ -32,126 +23,101 @@
 li {
 	list-style-type: none;
 }
-
 a {
 	text-decoration: none;
 }
 
-button {
-	cursor: pointer;
-	background: none;
-	border: none;
-}
-
-li, a, button, h1 {
-	font-family: 'Open Sans', sans-serif;
-}
-
-header {
+head {
 	position: fixed;
 }
-
 body {
-	display: grid;
-	grid-template-columns: 0.5fr 1.5fr;
-	grid-template-rows: 1fr;
-	grid-gap: 0px 0px;
-	background-color: var(--black-color);
-	overflow-x: hidden;
-}
-#Head-Content { 
-	grid-area: 1 / 1 / 2 / 2;
-}
-#Logo h1 {
-	position: relative;
-	margin: 1vh;
-	font-size: var(--text-size-2);
-	font-family: 'Bungee', cursive;
-	color: #CB2C52;
-	text-align: center;
+	overflow: hidden;
 }
 
-#Search {
-	text-align: center;
+#Content {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-rows: 1fr;
+  grid-gap: 0px 0px;
+  grid-template-areas:
+    "Content-Item Content-Description";
+  grid-area: Content;
 }
-#Search input {
-	width: 90%;
+#Content-Item { grid-area: Content-Item;
+	background-color: var(--white-color);
+	height: 100vh; }
+#Navigation {
+	position: absolute;
+	top: 3vh;
+	left: 1vw;
+}
+#Navigation img {
+	height: 40px;
+}
+#Navigation li {
+	position: relative;
+	top: -10px;
+	left: 2vw;
+	display: inline;
+	margin: 0.5vw;
+}
+#Navigation a {
+	font-size: var(--text-size-1);
+	font-family: 'Montserrat';
+	font-weight: bolder;
+	color: var(--black-color);
+}
+
+
+
+
+
+
+
+
+#Content-Description { grid-area: Content-Description;
+	background-image: url("Trainers.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: black;
+	height: 100vh;}
+.material-icons {
+	position: relative;
+	top: 1vh;
+	left: 1vw;
+	color: var(--white-color);
 	border: none;
-	border-radius: 5px;
-	border: 2px solid grey;
-	padding: 5px;
-	font-size: var(--text-size-1);
-	background-color: #303030;
-	color: grey;
+    background: none;
+    opacity: 0.8;
+	cursor: pointer;
 }
-
-#Button {
-	position: relative;
-	top: 1vh;
-	text-align: center;
+#Contact-VoA {
+	position: absolute;
+	bottom: 0;
 }
-#Button button {
-	color: var(--white-color);
+.VoA {
+	width: 25vw;
+	height: 20vh;
+	border: none;
+	font-family: 'Roboto', sans-serif;
 	font-size: var(--text-size-2);
-}
-
-#Main-Nav {
-	position: relative;
-	top: 1vh;
-	text-align: center;
-}
-#Main-Nav h1 {
-	color: var(--other-color);
-	font-size: var(--text-size-2);
-	font-weight: lighter;
-	text-align: center;
-}
-#Main-Nav a {
+	font-weight: bolder;
 	color: var(--white-color);
-	font-size: var(--text-size-1);
-	position: relative;
-	left: -1vmin;
-	display: block;
-}
-#Main-Nav i {
-	font-size: var(--text-size-1);
-	color: white;
-	float: left;
-	position: relative;
-	left: 2vmin;
-}
-#Main-Nav a:hover i {
-	color: var(--hover-color);
-}
-
-#Load-More {
-	text-align: center;
-}
-#Load-More button {
-	position: relative;
-	top: 2vh;
-	padding: 10px;
-	border-radius: 5px;
 	background-color: var(--other-color);
-	color: var(--white-color);
-	font-size: var(--text-size-2);
+	cursor: pointer;
 }
-#Load-More button:hover {
+.VoA:hover {
 	background-color: var(--hover-color);
 }
-#Body-Content { grid-area: 1 / 2 / 2 / 3; }
-#Categories { grid-area: 1 / 2 / 2 / 3; }
-#Sub-Categories {
-	position: relative;
-	top: 15vh;
-}
-#Sub-Categories a {
-	font-size: var(--text-size-1);
-	color: white;
-	background: #CB2C52;
-	padding: 5px;
-	border-radius: 5px;
-}
-#Sub-Categories a:hover {
-	background: #D04163;
+.Contact {
+	float: right;
+	width: 15vw;
+	height: 20vh;
+	border: none;
+	font-family: 'Roboto', sans-serif;
+	font-size: var(--text-size-2);
+	font-weight: bolder;
+	color: var(--white-color);
+	background-color: var(--black-color);
+	cursor: pointer;
 }
