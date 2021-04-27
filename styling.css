@@ -79,7 +79,7 @@ body {
 	background-image: url("Trainers.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-color: black;
+	background-color: #EFEFEF;
 	height: 100vh;}
 .material-icons {
 	position: relative;
@@ -89,12 +89,12 @@ body {
 	font-size: var(--text-size-2);
 	border: none;
     background: none;
-    opacity: 0.8;
+    opacity: 0.9;
 	cursor: pointer;
 }
 #Contact-VoA {
 	position: absolute;
-	bottom: 0;
+	top: 90vh;
 }
 .VoA {
 	width: 25vw;
