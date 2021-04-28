@@ -31,7 +31,7 @@ head {
 	position: fixed;
 }
 body {
-	overflow: hidden;
+	overflow: scroll;
 }
 
 #Content {
