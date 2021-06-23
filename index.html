@@ -1,100 +1,54 @@
-<DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="styling.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<div id="Content">
-
-	<div id="Content-1">
-		<header><a href="index.html">Trainerstore.com</a></header>
-		<div id="Detail">
-			<h1 id="Featured">Featured Product</h1>
-  			<div id="Detail-Image"></div>
-  			<div id="Detail-text" style="display: none">
-  				<li>Outer Material: Synthetic</li>
-				<li>Inner Material: Textile</li>
-				<li>Sole: Synthetic</li>
-				<li>Closure: Lace-Up</li>
-				<li>Heel Type: Flat</li>
-
-				<div id="Sizes">
-					<label for="sizes">Sizes:</label>
-
-					<select id="sizes">
-					<option value="0">Select</option>
-  					<option value="6">6</option>
-  					<option value="7">7</option>
-  					<option value="8">8</option>
-  					<option value="9">9</option>
-  					<option value="10">10</option>
-  					<option value="11">11</option>
-  					<option value="12">12</option>
-					</select>
-				</div>
-
-				<div id="Detail-button" onclick="addCart()" style="display: none">Add to cart</div>
-			</div>
-		</div>
-  
-		<div id="Cart">
-  			<div id="Checkout"></div>
-			<div id="Checkout-button" onclick="Checkout()">Checkout</div>
-		</div>
-
-    </div>
-
-    <div id="Content-2">
-		<a><img id="trainer" border="0" src="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=GB&ASIN=B00XWPUO6U&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=ishnualahi-21" onclick='imgLink()'>NIKE Men's Tanjun Trainers<span id="amazonLink">https://amzn.to/3fid3uv</span></a>
-
-	<!-- Hiding content-text until image is clicked -->
-	<script type="text/javascript">
-		function imgLink() {
-			var hideBackground = document.getElementById('Detail');
-			var HideFeatured = document.getElementById('Featured');
-			hideBackground.style.backgroundImage = 'none';
-			HideFeatured.style.display = 'none';
-			//Hide image and text
-
-			var textDisplay = document.getElementById('Detail-text');
-			textDisplay.style.display = "block";
-			//Display text
-
-			var imageDisplay = document.getElementById('trainer').src;
-			document.getElementById('Detail-Image').innerHTML += "<img src='"+imageDisplay+"'>";
-			//Display Image
-
-			var buttonDisplay = document.getElementById('Detail-button');
-			buttonDisplay.style.display = "block";
-			//Display add to cart button
-
-			var clearImage = document.getElementById('Detail-Image');
-			var  clearText = document.getElementById('Detail-text');
-			clearImage.toggle;
-			clearText.toggle;
-			//Hide everything on click
-		}
-		function addCart() {
-			var dropDown = document.getElementById('sizes');
-			dropDown.selectedIndex = 0;
-			//Reset shoe size
-
-			var cartImage = document.getElementById('trainer').src;
-			document.getElementById('Checkout').innerHTML += "<img src='"+cartImage+"'>";
-			// Put item in cart
-
-		}
-			function Checkout() {
-				var getLink = document.getElementById('amazonLink');
-				var writeLink = document.getElementById('Checkout-button');
-				writeLink.innerHTML = "<a href='"+getLink.textContent+"'></a>";
-				// Get and use the link inside of <span> tag
-			}
-	</script>
-
-  </div>
-
+<header>
+		<nav>
+			<a href="#"><h1>Les <span style="color: #FAC451;">Chair</span></h1></a>
+			<a href="#" class="hover">Home</a>
+			<a href="#" class="hover">Shop</a>
+			<input type="text" placeholder="search..">
+		</nav>
+</header>
+<main>
+<div id="container">
+	<div class="topText">
+		<h1>Discover your perfect fit</h1>
+		<p>Hay muchas variacioues de los pasajes de Lorem Ipsum dispon ibles, pero la mayoria sufrio alteraciones en alguna manera, ya sea portque human parcen.</p>
+	</div>
+	<div class="topImage">
+		<img src="manChair.png">
+	</div>
+	<div class="featured">
+		<h1>View All</h1>
+		<p>why not take a look at vast selection we have</p>
+			<a href="https://www.amazon.co.uk/play-Ergonomic-Conference-Leatherwith-Adjustable/dp/B07RYVZ43G?dchild=1&keywords=chair&qid=1624418342&sr=8-6&linkCode=li2&tag=ishnualahi0c-21&linkId=c1a0cbba8d55d858325051e3c989bb43&language=en_GB&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B07RYVZ43G&Format=_SL160_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=ishnualahi0c-21&language=en_GB" ></a><img src="https://ir-uk.amazon-adsystem.com/e/ir?t=ishnualahi0c-21&language=en_GB&l=li2&o=2&a=B07RYVZ43G" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+			<a href="https://www.amazon.co.uk/play-Ergonomic-Conference-Leatherwith-Adjustable/dp/B07RYVZ43G?dchild=1&keywords=chair&qid=1624418342&sr=8-6&linkCode=li2&tag=ishnualahi0c-21&linkId=c1a0cbba8d55d858325051e3c989bb43&language=en_GB&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B07RYVZ43G&Format=_SL160_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=ishnualahi0c-21&language=en_GB" ></a><img src="https://ir-uk.amazon-adsystem.com/e/ir?t=ishnualahi0c-21&language=en_GB&l=li2&o=2&a=B07RYVZ43G" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+			<a href="https://www.amazon.co.uk/play-Ergonomic-Conference-Leatherwith-Adjustable/dp/B07RYVZ43G?dchild=1&keywords=chair&qid=1624418342&sr=8-6&linkCode=li2&tag=ishnualahi0c-21&linkId=c1a0cbba8d55d858325051e3c989bb43&language=en_GB&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B07RYVZ43G&Format=_SL160_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=ishnualahi0c-21&language=en_GB" ></a><img src="https://ir-uk.amazon-adsystem.com/e/ir?t=ishnualahi0c-21&language=en_GB&l=li2&o=2&a=B07RYVZ43G" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+			<a href="https://www.amazon.co.uk/play-Ergonomic-Conference-Leatherwith-Adjustable/dp/B07RYVZ43G?dchild=1&keywords=chair&qid=1624418342&sr=8-6&linkCode=li2&tag=ishnualahi0c-21&linkId=c1a0cbba8d55d858325051e3c989bb43&language=en_GB&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B07RYVZ43G&Format=_SL160_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=ishnualahi0c-21&language=en_GB" ></a>
+			<a href="https://www.amazon.co.uk/play-Ergonomic-Conference-Leatherwith-Adjustable/dp/B07RYVZ43G?dchild=1&keywords=chair&qid=1624418342&sr=8-6&linkCode=li2&tag=ishnualahi0c-21&linkId=c1a0cbba8d55d858325051e3c989bb43&language=en_GB&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B07RYVZ43G&Format=_SL160_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=ishnualahi0c-21&language=en_GB" ></a><img src="https://ir-uk.amazon-adsystem.com/e/ir?t=ishnualahi0c-21&language=en_GB&l=li2&o=2&a=B07RYVZ43G" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+			<a href="https://www.amazon.co.uk/play-Ergonomic-Conference-Leatherwith-Adjustable/dp/B07RYVZ43G?dchild=1&keywords=chair&qid=1624418342&sr=8-6&linkCode=li2&tag=ishnualahi0c-21&linkId=c1a0cbba8d55d858325051e3c989bb43&language=en_GB&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B07RYVZ43G&Format=_SL160_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=ishnualahi0c-21&language=en_GB" ></a><img src="https://ir-uk.amazon-adsystem.com/e/ir?t=ishnualahi0c-21&language=en_GB&l=li2&o=2&a=B07RYVZ43G" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+			<a href="https://www.amazon.co.uk/play-Ergonomic-Conference-Leatherwith-Adjustable/dp/B07RYVZ43G?dchild=1&keywords=chair&qid=1624418342&sr=8-6&linkCode=li2&tag=ishnualahi0c-21&linkId=c1a0cbba8d55d858325051e3c989bb43&language=en_GB&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B07RYVZ43G&Format=_SL160_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=ishnualahi0c-21&language=en_GB" ></a><img src="https://ir-uk.amazon-adsystem.com/e/ir?t=ishnualahi0c-21&language=en_GB&l=li2&o=2&a=B07RYVZ43G" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+			<a href="https://www.amazon.co.uk/play-Ergonomic-Conference-Leatherwith-Adjustable/dp/B07RYVZ43G?dchild=1&keywords=chair&qid=1624418342&sr=8-6&linkCode=li2&tag=ishnualahi0c-21&linkId=c1a0cbba8d55d858325051e3c989bb43&language=en_GB&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B07RYVZ43G&Format=_SL160_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=ishnualahi0c-21&language=en_GB" ></a>
+			<a href="https://www.amazon.co.uk/play-Ergonomic-Conference-Leatherwith-Adjustable/dp/B07RYVZ43G?dchild=1&keywords=chair&qid=1624418342&sr=8-6&linkCode=li2&tag=ishnualahi0c-21&linkId=c1a0cbba8d55d858325051e3c989bb43&language=en_GB&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B07RYVZ43G&Format=_SL160_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=ishnualahi0c-21&language=en_GB" ></a><img src="https://ir-uk.amazon-adsystem.com/e/ir?t=ishnualahi0c-21&language=en_GB&l=li2&o=2&a=B07RYVZ43G" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+			<a href="https://www.amazon.co.uk/play-Ergonomic-Conference-Leatherwith-Adjustable/dp/B07RYVZ43G?dchild=1&keywords=chair&qid=1624418342&sr=8-6&linkCode=li2&tag=ishnualahi0c-21&linkId=c1a0cbba8d55d858325051e3c989bb43&language=en_GB&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B07RYVZ43G&Format=_SL160_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=ishnualahi0c-21&language=en_GB" ></a><img src="https://ir-uk.amazon-adsystem.com/e/ir?t=ishnualahi0c-21&language=en_GB&l=li2&o=2&a=B07RYVZ43G" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+			<a href="https://www.amazon.co.uk/play-Ergonomic-Conference-Leatherwith-Adjustable/dp/B07RYVZ43G?dchild=1&keywords=chair&qid=1624418342&sr=8-6&linkCode=li2&tag=ishnualahi0c-21&linkId=c1a0cbba8d55d858325051e3c989bb43&language=en_GB&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B07RYVZ43G&Format=_SL160_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=ishnualahi0c-21&language=en_GB" ></a><img src="https://ir-uk.amazon-adsystem.com/e/ir?t=ishnualahi0c-21&language=en_GB&l=li2&o=2&a=B07RYVZ43G" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+			<a href="https://www.amazon.co.uk/play-Ergonomic-Conference-Leatherwith-Adjustable/dp/B07RYVZ43G?dchild=1&keywords=chair&qid=1624418342&sr=8-6&linkCode=li2&tag=ishnualahi0c-21&linkId=c1a0cbba8d55d858325051e3c989bb43&language=en_GB&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B07RYVZ43G&Format=_SL160_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=ishnualahi0c-21&language=en_GB" ></a>
+			<a href="https://www.amazon.co.uk/play-Ergonomic-Conference-Leatherwith-Adjustable/dp/B07RYVZ43G?dchild=1&keywords=chair&qid=1624418342&sr=8-6&linkCode=li2&tag=ishnualahi0c-21&linkId=c1a0cbba8d55d858325051e3c989bb43&language=en_GB&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B07RYVZ43G&Format=_SL160_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=ishnualahi0c-21&language=en_GB" ></a><img src="https://ir-uk.amazon-adsystem.com/e/ir?t=ishnualahi0c-21&language=en_GB&l=li2&o=2&a=B07RYVZ43G" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+			<a href="https://www.amazon.co.uk/play-Ergonomic-Conference-Leatherwith-Adjustable/dp/B07RYVZ43G?dchild=1&keywords=chair&qid=1624418342&sr=8-6&linkCode=li2&tag=ishnualahi0c-21&linkId=c1a0cbba8d55d858325051e3c989bb43&language=en_GB&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B07RYVZ43G&Format=_SL160_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=ishnualahi0c-21&language=en_GB" ></a><img src="https://ir-uk.amazon-adsystem.com/e/ir?t=ishnualahi0c-21&language=en_GB&l=li2&o=2&a=B07RYVZ43G" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+			<a href="https://www.amazon.co.uk/play-Ergonomic-Conference-Leatherwith-Adjustable/dp/B07RYVZ43G?dchild=1&keywords=chair&qid=1624418342&sr=8-6&linkCode=li2&tag=ishnualahi0c-21&linkId=c1a0cbba8d55d858325051e3c989bb43&language=en_GB&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B07RYVZ43G&Format=_SL160_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=ishnualahi0c-21&language=en_GB" ></a><img src="https://ir-uk.amazon-adsystem.com/e/ir?t=ishnualahi0c-21&language=en_GB&l=li2&o=2&a=B07RYVZ43G" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+			<a href="https://www.amazon.co.uk/play-Ergonomic-Conference-Leatherwith-Adjustable/dp/B07RYVZ43G?dchild=1&keywords=chair&qid=1624418342&sr=8-6&linkCode=li2&tag=ishnualahi0c-21&linkId=c1a0cbba8d55d858325051e3c989bb43&language=en_GB&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B07RYVZ43G&Format=_SL160_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=ishnualahi0c-21&language=en_GB" ></a>
+			<a href="https://www.amazon.co.uk/play-Ergonomic-Conference-Leatherwith-Adjustable/dp/B07RYVZ43G?dchild=1&keywords=chair&qid=1624418342&sr=8-6&linkCode=li2&tag=ishnualahi0c-21&linkId=c1a0cbba8d55d858325051e3c989bb43&language=en_GB&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B07RYVZ43G&Format=_SL160_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=ishnualahi0c-21&language=en_GB" ></a><img src="https://ir-uk.amazon-adsystem.com/e/ir?t=ishnualahi0c-21&language=en_GB&l=li2&o=2&a=B07RYVZ43G" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+			<a href="https://www.amazon.co.uk/play-Ergonomic-Conference-Leatherwith-Adjustable/dp/B07RYVZ43G?dchild=1&keywords=chair&qid=1624418342&sr=8-6&linkCode=li2&tag=ishnualahi0c-21&linkId=c1a0cbba8d55d858325051e3c989bb43&language=en_GB&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B07RYVZ43G&Format=_SL160_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=ishnualahi0c-21&language=en_GB" ></a><img src="https://ir-uk.amazon-adsystem.com/e/ir?t=ishnualahi0c-21&language=en_GB&l=li2&o=2&a=B07RYVZ43G" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+			<a href="https://www.amazon.co.uk/play-Ergonomic-Conference-Leatherwith-Adjustable/dp/B07RYVZ43G?dchild=1&keywords=chair&qid=1624418342&sr=8-6&linkCode=li2&tag=ishnualahi0c-21&linkId=c1a0cbba8d55d858325051e3c989bb43&language=en_GB&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B07RYVZ43G&Format=_SL160_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=ishnualahi0c-21&language=en_GB" ></a><img src="https://ir-uk.amazon-adsystem.com/e/ir?t=ishnualahi0c-21&language=en_GB&l=li2&o=2&a=B07RYVZ43G" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+			<a href="https://www.amazon.co.uk/play-Ergonomic-Conference-Leatherwith-Adjustable/dp/B07RYVZ43G?dchild=1&keywords=chair&qid=1624418342&sr=8-6&linkCode=li2&tag=ishnualahi0c-21&linkId=c1a0cbba8d55d858325051e3c989bb43&language=en_GB&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B07RYVZ43G&Format=_SL160_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=ishnualahi0c-21&language=en_GB" ></a>
+	</div>
 </div>
+</main>
+<footer>
+</footer>
 </body>
 </html>
-</DOCTYPE>
