@@ -54,9 +54,6 @@ input {
 	padding:  10px;
 	color:  var(--black);
 }
-img {
-	float:  right;
-}
 #container h1 {
 	font-size:  var(--title);
 	color:  var(--white);
