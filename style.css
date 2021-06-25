@@ -15,7 +15,7 @@ footer {
 	bottom:  0;
 	width:  100vw;
 	height:  1vh;
-	background-color:  black;
+	background-color:  #0F0F0F;
 }
 header {
 	border-bottom:  1px solid #2E2D2D;
@@ -42,14 +42,14 @@ header a {
 	font-weight:  bold;
 	text-decoration: none;
 	color: var(--white);
-	font-size: min(max(12px, 4vw), 16px);
+	font-size: 2vmin;
 }
 .hover:hover {
 	color: var(--yellow);
 }
 input {
 	border:  none;
-	border-radius: 10px;
+	border-radius: 5px;
 	min-width:  85px;
 	width:  10vw;
 	padding:  0.75vmin;
@@ -62,10 +62,6 @@ input {
 #container p {
 	font-size:  2vmin;
 	color:  var(--grey);
-}
-#container img {
-	max-width: 100%;
-  height: auto;
 }
 #container {
   display: grid;
@@ -88,8 +84,16 @@ input {
 }
 .topImage { grid-area: topImage;
 align-self: center;}
-
+.topImage img {
+	max-width: 100%;
+  height: auto;
+}
 .featured { grid-area: featured;
 	text-align: center;
 	margin:  0 auto;
+
+}
+.featured img {
+	max-width: 75%;
+  height: auto;
 }
