@@ -3,8 +3,6 @@
   --grey:  #999591;
   --white: #EEEAE2;
   --yellow: #FAC451;
-  --text: 18px;
-  --title: 26px;
 }
 * {
 	font-family: 'Roboto', sans-serif;
@@ -27,6 +25,7 @@ body {
 	margin: 0;
 	padding:  0;
 	overflow-x: hidden;
+	width:  100vw;
 }
 nav {
 	display: flex;
@@ -36,31 +35,37 @@ nav {
 	align-items: baseline;
 	align-content: stretch;
 	margin:  0 auto;
-	width:  1280px;
+	width:  100vw;
+	max-width:  1280px;
 }
-a {
+header a {
 	font-weight:  bold;
-	color: var(--white);
 	text-decoration: none;
+	color: var(--white);
+	font-size: min(max(12px, 4vw), 16px);
 }
 .hover:hover {
 	color: var(--yellow);
 }
 input {
-	background-color:  var(--white);
 	border:  none;
-	border-radius: 50px;
+	border-radius: 10px;
+	min-width:  85px;
 	width:  10vw;
-	padding:  10px;
+	padding:  0.75vmin;
 	color:  var(--black);
 }
 #container h1 {
-	font-size:  var(--title);
+	font-size: 2.5vmin;
 	color:  var(--white);
 }
 #container p {
-	font-size:  var(--text);
+	font-size:  2vmin;
 	color:  var(--grey);
+}
+#container img {
+	max-width: 100%;
+  height: auto;
 }
 #container {
   display: grid;
@@ -74,11 +79,11 @@ input {
     "topText topImage"
     "featured featured";
   margin:  0 auto;
-	width:  1000px;
+  width:  90vw;
+	max-width:  1000px;
 }
 
 .topText { grid-area: topText;
-	text-align: left;
 	align-self: center;
 }
 .topImage { grid-area: topImage;
@@ -87,11 +92,4 @@ align-self: center;}
 .featured { grid-area: featured;
 	text-align: center;
 	margin:  0 auto;
-}
-.featured a {
-	display:  inline-block;
-	margin:  1vw;
-	padding:  10px;
-	border-radius: 5px;
-	background-color:  white;
 }
