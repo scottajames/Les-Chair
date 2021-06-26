@@ -93,7 +93,6 @@ align-self: center;}
   grid-area: content;
   background-color: #0F0F0F;
   margin-bottom:  10vh;
-  border:  1px solid #2E2D2D;
 }
 .filtering { grid-area: filtering;
 text-align: center;
