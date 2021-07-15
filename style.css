@@ -102,14 +102,20 @@ align-self: center;}
   margin-bottom:  10vh;
 }
 .products { grid-area: products;
-	text-align: center;}
+	text-align: center;
+	display:  flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
 .products a {
 	width:  10vw;
 	max-width:  150px;
 	min-width:  110px;
+	overflow-y: hidden;
 	text-decoration: none;
 	display: inline-block;
-	margin:  0vh 2vw;}
+	margin:  0vh 2vw;
+}
 .products img {
 	width:  10vw;
 	max-width: 150px;
