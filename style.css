@@ -116,6 +116,9 @@ align-self: center;}
 	display: inline-block;
 	margin:  0vh 2vw;
 }
+.products li {
+	display:  inline-flex;
+}
 .products img {
 	width:  10vw;
 	max-width: 150px;
