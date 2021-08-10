@@ -116,7 +116,7 @@ align-self: center;}
 	display: inline-block;
 	margin:  0vh 2vw;
 }
-.products li {
+.products ul li {
 	display:  inline-flex;
 }
 .products img {
