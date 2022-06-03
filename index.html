@@ -1,103 +1,438 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="description" content="">
-	<meta name="keywords" content="HTML, CSS, JavaScript">
-	<meta name="author" content="Scott James">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>LesChair : Discovering your perfect fit</title>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="style.css">
+<title>LGBTQuality.com</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=system-ui">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" type="text/css" href="styling.css">
 </head>
 <body>
-<header>
+	<header>
 		<nav>
-			<a href="index.html"><h1>Les <span style="color: #FAC451;">Chair</span></h1></a>
-			<a href="index.html" class="hover">Home</a>
-			<a href="#content" class="hover">Shop</a>
-			<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search..">
-
+			<a href="index.html" class="headerLogo headerImage"><h1>Les <span style="color: #FAC451;">Chair</span></h1></a>
+			<div class="HeaderNav">
+				<a href="index.html" class="hover"><h3>Home</h3></a>
+				<a href="#content" class="hover"><h3>Shop</h3></a>
+				<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search..">
+			</div>
+			<i class="fa fa-bars" aria-hidden="true" style="cursor:pointer;" onclick="ResponeClick(); ResponseBG();"></i>
 		</nav>
-</header>
-<main>
-<div id="container">
-	<div class="topText">
-		<h1>Discover your perfect fit</h1>
-		<p>Buying a chair is an investment and one that should be taken seriously. We have an excellent range of ergonomic and stylish chairs to suit all styles.</p>
+	</header>
+
+	<div class="Grid-Main">
+		<!-- Responsive Navigation -->
+		<nav id="responsiveSideNav">
+			<i class="fa fa-times" aria-hidden="true" style="float:right" onclick="CloseResponeClick(); CloseResponseBG();"></i>
+			<a class="sideNavItem" onclick="RtopsClick()" href="javascript:void(0)">Gamer<br>Chairs <i class="fa fa-angle-right" aria-hidden="true" style="padding-left: 50px;"></i></a>
+				<div id="RtopsDropdown">
+					<a href="javascript:void(0)" onclick="TshirtClick();">T Shirt</a>
+      				<a href="javascript:void(0)" onclick="PoloClick();">Polo Shirt</a>
+      				<a href="javascript:void(0)" onclick="longSleeveClick();">Long Sleeve Shirt</a>
+				</div>
+
+			<a class="sideNavItem" onclick="RAccessoriesClick()" href="javascript:void(0)">Office<br>Chairs <i class="fa fa-angle-right" aria-hidden="true" style="padding-left: 50px;"></i></a>
+				<div id="RaccessoriesDropdown">
+					<a href="javascript:void(0)" onclick="HatsClick();">Hats</a>
+      				<a href="javascript:void(0)" onclick="JewelleryClick();">Jewellery</a>
+      				<a href="javascript:void(0)" onclick="MaskClick();">Mask</a>
+  				</div>
+
+  			<a class="sideNavItem" href="javascript:void(0)" onclick="TrainersClick();">Trainers</a>
+
+  			<a class="sideNavItem" href="javascript:void(0)" onclick="FlagsClick();">Flags</a>
+			</nav>
+		<div id="responsiveBackground"></div>
+			<!-- End of Responsive Navigation -->
+
+		<nav class="sideNav">
+			<a class="sideNavItem" onclick="displayTops();" href="javascript:void(0)">Gamer Chairs <i class="fa fa-angle-right" aria-hidden="true" style="padding-left: 50px;"></i></a>
+				<div id="topsDropdown">
+					<a href="javascript:void(0)" onclick="TshirtClick();">DXRacer</a>
+      				<a href="javascript:void(0)" onclick="PoloClick();">GT OMEGA</a>
+      				<a href="javascript:void(0)" onclick="longSleeveClick();">AKRacing</a>
+				</div>
+
+			<a class="sideNavItem" onclick="displayAccessories();" href="javascript:void(0)">Office Chairs <i class="fa fa-angle-right" aria-hidden="true" style="padding-left: 50px;"></i></a>
+				<div id="accessoriesDropdown">
+					<a href="javascript:void(0)" onclick="HatsClick();">Ergonomic</a>
+      				<a href="javascript:void(0)" onclick="JewelleryClick();">Mesh</a>
+      				<a href="javascript:void(0)" onclick="MaskClick();">Non Wheeled</a>
+  				</div>
+
+  			<a class="sideNavItem" href="javascript:void(0)" onclick="TrainersClick();">Executive Chairs</a>
+
+  			<a class="sideNavItem" href="javascript:void(0)" onclick="FlagsClick();">Accessories</a>
+			</nav>
+
+			<div class="GridItems">
+					<p id="itemCount"></p>
+
+				<div id="Tshirt">
+					<a href="#"><img src="#" alt="">
+        			<p>Vintage Skinny Jeans<br><b>$14.99</b></p></a>
+
+        			<a href="#"><img src="#" alt="">
+        			<p>Vintage Skinny Jeans<br><b>$14.99</b></p></a>
+
+        			<a href="#"><img src="#" alt="">
+        			<p>Vintage Skinny Jeans<br><b>$14.99</b></p></a>
+
+        			<a href="#"><img src="#" alt="">
+        			<p>Vintage Skinny Jeans<br><b>$14.99</b></p></a>
+
+        			<a href="#"><img src="#" alt="">
+        			<p>Vintage Skinny Jeans<br><b>$14.99</b></p></a>
+
+        			<a href="#"><img src="#" alt="">
+        			<p>Vintage Skinny Jeans<br><b>$14.99</b></p></a>
+				</div>
+
+				<div id="PoloShirt">
+					<a href="#"><img src="#" alt="">
+        			<p>Vintage Skinny Jeans<br><b>$14.99</b></p></a>
+
+        			<a href="#"><img src="#" alt="">
+        			<p>Vintage Skinny Jeans<br><b>$14.99</b></p></a>
+
+        			<a href="#"><img src="#" alt="">
+        			<p>Vintage Skinny Jeans<br><b>$14.99</b></p></a>
+
+        			<a href="#"><img src="#" alt="">
+        			<p>Vintage Skinny Jeans<br><b>$14.99</b></p></a>
+
+        			<a href="#"><img src="#" alt="">
+        			<p>Vintage Skinny Jeans<br><b>$14.99</b></p></a>
+
+        			<a href="#"><img src="#" alt="">
+        			<p>Vintage Skinny Jeans<br><b>$14.99</b></p></a>
+				</div>
+
+				<div id="LongSleeveShirt">
+					<a href="#"><img src="#" alt="">
+        			<p>Vintage Skinny Jeans<br><b>$14.99</b></p></a>
+
+        			<a href="#"><img src="#" alt="">
+        			<p>Vintage Skinny Jeans<br><b>$14.99</b></p></a>
+
+        			<a href="#"><img src="#" alt="">
+        			<p>Vintage Skinny Jeans<br><b>$14.99</b></p></a>
+
+        			<a href="#"><img src="#" alt="">
+        			<p>Vintage Skinny Jeans<br><b>$14.99</b></p></a>
+
+        			<a href="#"><img src="#" alt="">
+        			<p>Vintage Skinny Jeans<br><b>$14.99</b></p></a>
+
+        			<a href="#"><img src="#" alt="">
+        			<p>Vintage Skinny Jeans<br><b>$14.99</b></p></a>
+				</div>
+
+				<div id="Hats">
+					<a href="#"><img src="#" alt="">
+        			<p>Vintage Skinny Jeans<br><b>$14.99</b></p></a>
+
+        			<a href="#"><img src="#" alt="">
+        			<p>Vintage Skinny Jeans<br><b>$14.99</b></p></a>
+
+        			<a href="#"><img src="#" alt="">
+        			<p>Vintage Skinny Jeans<br><b>$14.99</b></p></a>
+
+        			<a href="#"><img src="#" alt="">
+        			<p>Vintage Skinny Jeans<br><b>$14.99</b></p></a>
+				</div>
+
+				<div id="Jewellery">
+					<a href="#"><img src="#" alt="">
+        			<p>Vintage Skinny Jeans<br><b>$14.99</b></p></a>
+
+        			<a href="#"><img src="#" alt="">
+        			<p>Vintage Skinny Jeans<br><b>$14.99</b></p></a>
+
+        			<a href="#"><img src="#" alt="">
+        			<p>Vintage Skinny Jeans<br><b>$14.99</b></p></a>
+
+        			<a href="#"><img src="#" alt="">
+        			<p>Vintage Skinny Jeans<br><b>$14.99</b></p></a>
+
+        			<a href="#"><img src="#" alt="">
+        			<p>Vintage Skinny Jeans<br><b>$14.99</b></p></a>
+
+        			<a href="#"><img src="#" alt="">
+        			<p>Vintage Skinny Jeans<br><b>$14.99</b></p></a>
+				</div>
+
+				<div id="Mask">
+					<a href="#"><img src="#" alt="">
+        			<p>Vintage Skinny Jeans<br><b>$14.99</b></p></a>
+
+        			<a href="#"><img src="#" alt="">
+        			<p>Vintage Skinny Jeans<br><b>$14.99</b></p></a>
+
+				</div>
+
+				<div id="Trainers">
+					<a href="#"><img src="#" alt="">
+        			<p>Vintage Skinny Jeans<br><b>$14.99</b></p></a>
+				</div>
+
+				<div id="Flags">
+					<ul id="myUL">
+					<li>
+						<a href="https://www.amazon.co.uk/Hartleys-Aluminium-Office-Castor-Wheels/dp/B017MENZQ2?&linkCode=li2&tag=&linkId=345d657b9e8fdb87de0c591a0c733634&language=en_GB&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B017MENZQ2&Format=_SL160_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=&language=en_GB" >
+					<p>Vintage Skinny Jeans<br><b>$14.99</b></p></a></li>
+
+					<li>
+						<a href="https://www.amazon.co.uk/Hartleys-Black-Office-Castor-Wheels/dp/B017MENWCO?&linkCode=li2&tag=&linkId=4caac3abd67c3f9e3809bf61323f6d92&language=en_GB&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B017MENWCO&Format=_SL160_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=&language=en_GB" >
+					<p>Vintage Skinny Jeans<br><b>$14.99</b></p></a></li>
+
+					<li>
+						<a href="https://www.amazon.co.uk/Hartleys-Replacement-Chair-Lift-Piston/dp/B01DFDNJTC?pd_rd_w=WXyZz&content-id=amzn1.sym.424ee22f-2317-49a5-9cbb-bc8836ac7d96&pf_rd_p=424ee22f-2317-49a5-9cbb-bc8836ac7d96&pf_rd_r=J48B6GGKMV29NGD7EEKR&pd_rd_wg=JPxT6&pd_rd_r=f6dafe07-c8e3-440e-990a-2898b980f3c8&pd_rd_i=B01DFDNJTC&th=1&linkCode=li2&tag=scottyaj02-21&linkId=8481be5a455b405e8ae53ec21d4d2e77&language=en_GB&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B01DFDNJTC&Format=_SL160_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=scottyaj02-21&language=en_GB" >
+					<p>Vintage Skinny Jeans<br><b>$14.99</b></p></a></li>
+
+					<li>
+						<a href="https://www.amazon.co.uk/dp/B01DFDNIXO?_encoding=UTF8&th=1&linkCode=li2&tag=scottyaj02-21&linkId=35046a5e0d22bcf972c7df7807621c31&language=en_GB&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B01DFDNIXO&Format=_SL160_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=scottyaj02-21&language=en_GB" >
+					<p>Vintage Skinny Jeans<br><b>$14.99</b></p></a></li>
+
+					<li>
+						<a href="https://www.amazon.co.uk/dp/B0932KGJDN?psc=1&pd_rd_i=B0932KGJDN&pd_rd_w=v6DxF&content-id=amzn1.sym.c94cd60b-aad9-474d-91c5-7305d0779c72&pf_rd_p=c94cd60b-aad9-474d-91c5-7305d0779c72&pf_rd_r=XDJ87DXW6MCYDBD7Z8WF&pd_rd_wg=ViA26&pd_rd_r=17ac6f16-e8d0-4433-a2fa-6c01e2829562&s=industrial&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExT0hINk1OVjk3VUg4JmVuY3J5cHRlZElkPUEwMjUyMDgzOTVHRzJaU1pQREJGJmVuY3J5cHRlZEFkSWQ9QTAyNTIzNDUxUUw4M0wzQkZNS1k5JndpZGdldE5hbWU9c3BfZGV0YWlsMiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU%3D&linkCode=li2&tag=scottyaj02-21&linkId=70985f99660118172691ce2ca7a7b07b&language=en_GB&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B0932KGJDN&Format=_SL160_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=scottyaj02-21&language=en_GB" >
+					<p>Vintage Skinny Jeans<br><b>$14.99</b></p></a></li>
+
+					<li>
+						<a href="https://www.amazon.co.uk/Office-Replacement-casters-Hardwood-Replace/dp/B085XMX165?pd_rd_w=i89Zr&content-id=amzn1.sym.93e1d4b1-bb8c-45f0-baaf-a13934852b31&pf_rd_p=93e1d4b1-bb8c-45f0-baaf-a13934852b31&pf_rd_r=DSRRXN70ZFD8SX88R1KQ&pd_rd_wg=I59nZ&pd_rd_r=de10c984-8572-4a10-b796-cd266c591ca5&pd_rd_i=B01G643EU6&th=1&linkCode=li2&tag=scottyaj02-21&linkId=57909c7b2876f6944bd0fbbf61e41fa9&language=en_GB&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B085XMX165&Format=_SL160_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=scottyaj02-21&language=en_GB" >
+					<p>Vintage Skinny Jeans<br><b>$14.99</b></p></a></li>
+
+					<li>
+						<a href="https://www.amazon.co.uk/Office-Replacement-casters-Hardwood-Replace/dp/B01G643EU6?pd_rd_w=i89Zr&content-id=amzn1.sym.93e1d4b1-bb8c-45f0-baaf-a13934852b31&pf_rd_p=93e1d4b1-bb8c-45f0-baaf-a13934852b31&pf_rd_r=DSRRXN70ZFD8SX88R1KQ&pd_rd_wg=I59nZ&pd_rd_r=de10c984-8572-4a10-b796-cd266c591ca5&pd_rd_i=B01G643EU6&th=1&linkCode=li2&tag=scottyaj02-21&linkId=7a3f15868ed3a42fd934e7f31aa0e5e4&language=en_GB&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B01G643EU6&Format=_SL160_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=scottyaj02-21&language=en_GB" >
+					<p>Vintage Skinny Jeans<br><b>$14.99</b></p></a></li>
+
+					<li>
+						<a href="https://www.amazon.co.uk/Hartleys-Replacement-Office-Chair-Metal/dp/B00BL0Z1RA?crid=1TMNENOGXOS9H&keywords=office+chair+base+replacement&qid=1654164656&sprefix=office+chair+base+replacement%2Caps%2C108&sr=8-8&linkCode=li2&tag=scottyaj02-21&linkId=9af8bb51c971870204c8480d979190a7&language=en_GB&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B00BL0Z1RA&Format=_SL160_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=scottyaj02-21&language=en_GB" >
+					<p>Vintage Skinny Jeans<br><b>$14.99</b></p></a></li>
+
+				</div>
+			</div>
 	</div>
-	<div class="topImage">
-		<img src="manChair.png" alt="Man sitting in chair">
-	</div>
-	<div id="content">
-		<div class="products">
-			<ul id="myUL">
-			<li><a href="https://www.amazon.co.uk/Yaheetech-Adjustable-Ergonomic-Conference-Executive/dp/B08Y87T92T?dchild=1&keywords=desk+chair&qid=1625145873&sr=8-5&linkCode=li2&tag=ishnualahi0c-21&linkId=684101824e5944e6958f0a2ef0b9432f&language=en_GB&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B08Y87T92T&Format=_SL160_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=ishnualahi0c-21&language=en_GB" ><p>Yaheetech Black Office Chair<br><span style="color: white; font-weight: bolder;">59.99</span></p></a><img style="display: none;" src="https://ir-uk.amazon-adsystem.com/e/ir?t=ishnualahi0c-21&language=en_GB&l=li2&o=2&a=B08Y87T92T" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></li>
+	<footer>
+	</footer>
+	<script>
+		//Open Cart and Cart Background
+		function CartClick() {
+  		var a = document.getElementById("displayCart");
+  			if (a.style.display === "none") {
+    		a.style.display = "block";
+  		} else {
+    		a.style.display = "none";
+  			}
+		}
+		function CartBG() {
+  		var b = document.getElementById("cartBackground");
+  			if (b.style.display === "none") {
+    		b.style.display = "block";
+  		} else {
+    		b.style.display = "none";
+  			}
+		}
+
+		//Close Cart and Cart Background
+		function CartClose() {
+			var c = document.getElementById("displayCart");
+  			if (c.style.display === "block") {
+    		c.style.display = "none";
+  		} else {
+    		c.style.display = "block";
+  			}
+		}
+		function CartCloseBG() {
+			var d = document.getElementById("cartBackground");
+  			if (d.style.display === "block") {
+    		d.style.display = "none";
+  		} else {
+    		d.style.display = "block";
+  			}
+		}
 
 
-			<li><a href="https://www.amazon.co.uk/Yaheetech-Adjustable-Executive-Managerial-Conference/dp/B093SSRZZW?dchild=1&keywords=desk+chair&qid=1626257500&sr=8-37&linkCode=li2&tag=ishnualahi0c-21&linkId=7be9c49884ad2e6fbec9a3e13c119f6d&language=en_GB&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B093SSRZZW&Format=_SL160_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=ishnualahi0c-21&language=en_GB" ><p>Yaheetech Black Office Chair<br><span style="color: white; font-weight: bolder;">47.99</span></p></a><img src="https://ir-uk.amazon-adsystem.com/e/ir?t=ishnualahi0c-21&language=en_GB&l=li2&o=2&a=B093SSRZZW" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></li>
+		// Click on the "Tops" link top open/close topsDropdown
+		function displayTops() {
+  		var e = document.getElementById("topsDropdown");
+  			if (e.style.display === "none") {
+    		e.style.display = "block";
+  		} else {
+    		e.style.display = "none";
+  			}
+		}
+		// Click on the "Accessories" link top open/close topsDropdown
+		function displayAccessories() {
+  		var f = document.getElementById("accessoriesDropdown");
+  			if (f.style.display === "none") {
+    		f.style.display = "block";
+  		} else {
+    		f.style.display = "none";
+  			}
+		}
 
-			<li><a href="https://www.amazon.co.uk/STmeng-Ergonomic-Adjustable-Computer-Headrest/dp/B089Y8PM5Y?dchild=1&keywords=desk+chair&qid=1626257500&sr=8-14&linkCode=li2&tag=ishnualahi0c-21&linkId=24d84f749722cc7e453a38384ef7c632&language=en_GB&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B089Y8PM5Y&Format=_SL160_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=ishnualahi0c-21&language=en_GB" ><p>STmeng Mesh Office Chair<br><span style="color: white; font-weight: bolder;">74.99</span></p></a><img src="https://ir-uk.amazon-adsystem.com/e/ir?t=ishnualahi0c-21&language=en_GB&l=li2&o=2&a=B089Y8PM5Y" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></li>
+		//Uses the triple ||| button when below 640px to open the navigation
+		function ResponeClick() {
+			var g = document.getElementById("responsiveSideNav");
+  			if (g.style.display === "none") {
+    		g.style.display = "block";
+  		} else {
+    		g.style.display = "none";
+  			}
+		}
+		function ResponseBG() {
+			var h = document.getElementById("responsiveBackground");
+  			if (h.style.display === "none") {
+    		h.style.display = "block";
+  		} else {
+    		h.style.display = "none";
+  			}
+		}
 
-			<li><a href="https://www.amazon.co.uk/SONGMICS-Ergonomic-Adjustable-Headrest-OBN056B02/dp/B08G1GXQ6Z?keywords=umi+office+chair&qid=1638151032&sr=8-21&linkCode=li2&tag=scottyaj-21&linkId=97339985732c3829803352a4174b7e41&language=en_GB&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B08G1GXQ6Z&Format=_SL160_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=scottyaj-21&language=en_GB" ><p>SONGMICS Mesh Chair<br><span style="color: white; font-weight: bolder;">109.99</span></p></a><img src="https://ir-uk.amazon-adsystem.com/e/ir?t=ishnualahi0c-21&language=en_GB&l=li2&o=2&a=B081HWKWN6" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></li>
+		//Uses the X button when it is available below 640px to close the Navigation
+		function CloseResponeClick() {
+			var i = document.getElementById("responsiveSideNav");
+  			if (i.style.display === "block") {
+    		i.style.display = "none";
+  		} else {
+    		i.style.display = "block";
+  			}
+		}
+		function CloseResponseBG() {
+			var j = document.getElementById("responsiveBackground");
+  			if (j.style.display === "block") {
+    		j.style.display = "none";
+  		} else {
+    		j.style.display = "block";
+  			}
+		}
+		// Click on the "Tops" link top open/close topsDropdown
+		function RtopsClick() {
+  		var k = document.getElementById("RtopsDropdown");
+  			if (k.style.display === "none") {
+    		k.style.display = "block";
+  		} else {
+    		k.style.display = "none";
+  			}
+		}
+		// Click on the "Accessories" link top open/close topsDropdown
+		function RAccessoriesClick() {
+  		var l = document.getElementById("RaccessoriesDropdown");
+  			if (l.style.display === "none") {
+    		l.style.display = "block";
+  		} else {
+    		l.style.display = "none";
+  			}
+		}
 
-			<li><a href="https://www.amazon.co.uk/SIHOO-Ergonomic-Adjustable-Armrests-Skin-Friendly/dp/B085GDG45B?dchild=1&keywords=desk+chair&qid=1626257671&sr=8-218&linkCode=li2&tag=ishnualahi0c-21&linkId=eeaa6323523a3c7f8226a4ba8901c71a&language=en_GB&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B085GDG45B&Format=_SL160_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=ishnualahi0c-21&language=en_GB" ><p>SIHOO Home Office Chair<br><span style="color: white; font-weight: bolder;">219.99</span></p></a><img src="https://ir-uk.amazon-adsystem.com/e/ir?t=ishnualahi0c-21&language=en_GB&l=li2&o=2&a=B085GDG45B" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></li>
+		// Hide and showing items depending on what you click on the sidebar
+		function TshirtClick() {
+			document.getElementById("Tshirt").style.display = "block";
+    		document.getElementById("PoloShirt").style.display = "none";
+    		document.getElementById("LongSleeveShirt").style.display = "none";
 
-			<li><a href="https://www.amazon.co.uk/YITAHOME-Ergonomic-Adjustable-Headrest-Executive/dp/B08XJ473KR?dchild=1&keywords=desk+chair&qid=1626257671&sr=8-200&linkCode=li2&tag=ishnualahi0c-21&linkId=c3509feca4c0e370591f6431b96a6f44&language=en_GB&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B08XJ473KR&Format=_SL160_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=ishnualahi0c-21&language=en_GB" ><p>YITAHOME Office Chair<br><span style="color: white; font-weight: bolder;">166.99</span></p></a><img src="https://ir-uk.amazon-adsystem.com/e/ir?t=ishnualahi0c-21&language=en_GB&l=li2&o=2&a=B08XJ473KR" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></li>
+    		document.getElementById("Hats").style.display = "none";
+    		document.getElementById("Jewellery").style.display = "none";
+    		document.getElementById("Mask").style.display = "none";
 
-			<li><a href="https://www.amazon.co.uk/Sigtua-Ergonomic-Computer-Breathable-Adjustable/dp/B08T1SLHQZ?dchild=1&keywords=desk+chair&qid=1626257616&sr=8-175&linkCode=li2&tag=ishnualahi0c-21&linkId=150bd797392da947f3fe94b51dcc14e8&language=en_GB&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B08T1SLHQZ&Format=_SL160_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=ishnualahi0c-21&language=en_GB" ><p>Sigtua Office Chair Desk Chair<br><span style="color: white; font-weight: bolder;">64.99</span></p></a><img src="https://ir-uk.amazon-adsystem.com/e/ir?t=ishnualahi0c-21&language=en_GB&l=li2&o=2&a=B08T1SLHQZ" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></li>
+    		document.getElementById("Trainers").style.display = "none";
+    		document.getElementById("Flags").style.display = "none";
+  		}
 
-			<li><a href="https://www.amazon.co.uk/Yaheetech-Executive-Breathable-Adjustable-Armrests/dp/B0892YPKG1?dchild=1&keywords=desk+chair&qid=1626257616&sr=8-156&linkCode=li2&tag=ishnualahi0c-21&linkId=a8a948651621948a48db834bbeed1fa3&language=en_GB&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B0892YPKG1&Format=_SL160_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=ishnualahi0c-21&language=en_GB" ><p>Yaheetech Executive Chair<br><span style="color: white; font-weight: bolder;">69.99</span></p></a><img src="https://ir-uk.amazon-adsystem.com/e/ir?t=ishnualahi0c-21&language=en_GB&l=li2&o=2&a=B0892YPKG1" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></li>
+  		function PoloClick() {
+    		document.getElementById("Tshirt").style.display = "none";
+    		document.getElementById("PoloShirt").style.display = "block";
+    		document.getElementById("LongSleeveShirt").style.display = "none";
 
-			<li><a href="https://www.amazon.co.uk/Leather-Office-Ergonomic-Executive-Comfortable/dp/B08YJZSBN9?dchild=1&keywords=desk+chair&qid=1626257616&sr=8-145&linkCode=li2&tag=ishnualahi0c-21&linkId=7d1fe340c83e5c3978edb8cb9173fd6c&language=en_GB&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B08YJZSBN9&Format=_SL160_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=ishnualahi0c-21&language=en_GB" ><p>Black Leather Office Chair<br><span style="color: white; font-weight: bolder;">52.99</span></p></a><img src="https://ir-uk.amazon-adsystem.com/e/ir?t=ishnualahi0c-21&language=en_GB&l=li2&o=2&a=B08YJZSBN9" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></li>
+    		document.getElementById("Hats").style.display = "none";
+    		document.getElementById("Jewellery").style.display = "none";
+    		document.getElementById("Mask").style.display = "none";
 
-			<li><a href="https://www.amazon.co.uk/YITAHOME-Ergonomic-Comuter-Headrest-Adjustable/dp/B08XHXSP28?dchild=1&keywords=desk+chair&qid=1626257579&sr=8-101&linkCode=li2&tag=ishnualahi0c-21&linkId=bdfbb7d047deb51f3e68142ce12a74b8&language=en_GB&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B08XHXSP28&Format=_SL160_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=ishnualahi0c-21&language=en_GB" ><p>YITAHOME Office Chair<br><span style="color: white; font-weight: bolder;">149.99</span></p></a><img src="https://ir-uk.amazon-adsystem.com/e/ir?t=ishnualahi0c-21&language=en_GB&l=li2&o=2&a=B08XHXSP28" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></li>
+    		document.getElementById("Trainers").style.display = "none";
+    		document.getElementById("Flags").style.display = "none";
+  		}
 
-			<li><a href="https://www.amazon.co.uk/Drafting-Office-Ergonomic-Footrest-Leather/dp/B08DXHPNQW?dchild=1&keywords=desk+chair&qid=1626257671&sr=8-193&linkCode=li2&tag=ishnualahi0c-21&linkId=e372e13620de2d010503a689ed2d2132&language=en_GB&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B08DXHPNQW&Format=_SL160_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=ishnualahi0c-21&language=en_GB" ><p>EClife Stool Chair Footrest<br><span style="color: white; font-weight: bolder;">129.99</span></p></a><img src="https://ir-uk.amazon-adsystem.com/e/ir?t=ishnualahi0c-21&language=en_GB&l=li2&o=2&a=B08DXHPNQW" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></li>
+  		function longSleeveClick() {
+    		document.getElementById("Tshirt").style.display = "none";
+    		document.getElementById("PoloShirt").style.display = "none";
+    		document.getElementById("LongSleeveShirt").style.display = "block";
 
-			<li><a href="https://www.amazon.co.uk/Yaheetech-Executive-Ergonomic-Computer-Adjustable/dp/B08HLGYX9S?keywords=office+chair&qid=1638151269&sr=8-44&linkCode=li2&tag=scottyaj-21&linkId=ccf7a7653a07bdd32c0aca0255e663ba&language=en_GB&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B08HLGYX9S&Format=_SL160_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=scottyaj-21&language=en_GB" ><p>Yaheetech Black Office Chair<br><span style="color: white; font-weight: bolder;">62.99</span></p></a><img src="https://ir-uk.amazon-adsystem.com/e/ir?t=ishnualahi0c-21&language=en_GB&l=li2&o=2&a=B085C23HDW" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></li>
+    		document.getElementById("Hats").style.display = "none";
+    		document.getElementById("Jewellery").style.display = "none";
+    		document.getElementById("Mask").style.display = "none";
 
-			<li><a href="https://www.amazon.co.uk/Velvet-without-Computer-Adjustable-Backrest/dp/B08L8SJ4NY?dchild=1&keywords=desk+chair&qid=1626257579&sr=8-126&linkCode=li2&tag=ishnualahi0c-21&linkId=95277117b9ae65fdee252a411c538765&language=en_GB&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B08L8SJ4NY&Format=_SL160_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=ishnualahi0c-21&language=en_GB" ><p>Farelves Velvet Desk Chair <br><span style="color: white; font-weight: bolder;">59.99</span></p></a><img src="https://ir-uk.amazon-adsystem.com/e/ir?t=ishnualahi0c-21&language=en_GB&l=li2&o=2&a=B08L8SJ4NY" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></li>
+    		document.getElementById("Trainers").style.display = "none";
+    		document.getElementById("Flags").style.display = "none";
+  		}
 
-			<li><a href="https://www.amazon.co.uk/KKTONER-Computer-Leather-Adjustable-Drafting/dp/B086MMXQJS?dchild=1&keywords=desk+chair&qid=1626257579&sr=8-137&linkCode=li2&tag=ishnualahi0c-21&linkId=dfa14f6055e00ce4ad85f0702147f4cc&language=en_GB&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B086MMXQJS&Format=_SL160_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=ishnualahi0c-21&language=en_GB" ><p>KKTONER Office Swivel Chair<br><span style="color: white; font-weight: bolder;">49.99</span></p></a><img src="https://ir-uk.amazon-adsystem.com/e/ir?t=ishnualahi0c-21&language=en_GB&l=li2&o=2&a=B086MMXQJS" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></li>
+  		function HatsClick() {
+    		document.getElementById("Tshirt").style.display = "none";
+    		document.getElementById("PoloShirt").style.display = "none";
+    		document.getElementById("LongSleeveShirt").style.display = "none";
 
-			<li><a href="https://www.amazon.co.uk/Hironpal-Ergonomic-Executive-Reception-Adjustable/dp/B084WZ4QSF?dchild=1&keywords=desk+chair&qid=1626257707&sr=8-250&linkCode=li2&tag=ishnualahi0c-21&linkId=d334a499c986a5cc8ff37f6c40309104&language=en_GB&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B084WZ4QSF&Format=_SL160_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=ishnualahi0c-21&language=en_GB" ><p>Hironpal Velvet Office Chair<br><span style="color: white; font-weight: bolder;">87.99</span></p></a><img src="https://ir-uk.amazon-adsystem.com/e/ir?t=ishnualahi0c-21&language=en_GB&l=li2&o=2&a=B084WZ4QSF" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></li>
+    		document.getElementById("Hats").style.display = "block";
+    		document.getElementById("Jewellery").style.display = "none";
+    		document.getElementById("Mask").style.display = "none";
+    		
+    		document.getElementById("Trainers").style.display = "none";
+    		document.getElementById("Flags").style.display = "none";
+  		}
 
-			<li><a href="https://www.amazon.co.uk/Office-Computer-Chairs-Ergonomic-Conference/dp/B08CR7QXPD?dchild=1&keywords=desk+chair&qid=1626257555&sr=8-59&linkCode=li2&tag=ishnualahi0c-21&linkId=650b1bf957f1d7ea46d95fd4b74eb063&language=en_GB&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B08CR7QXPD&Format=_SL160_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=ishnualahi0c-21&language=en_GB" ><p>Zoyo Armless Office Chair<br><span style="color: white; font-weight: bolder;">49.99</span></p></a><img src="https://ir-uk.amazon-adsystem.com/e/ir?t=ishnualahi0c-21&language=en_GB&l=li2&o=2&a=B08CR7QXPD" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></li>
+  		function JewelleryClick() {
+    		document.getElementById("Tshirt").style.display = "none";
+    		document.getElementById("PoloShirt").style.display = "none";
+    		document.getElementById("LongSleeveShirt").style.display = "none";
 
-			<li><a href="https://www.amazon.co.uk/JL-Comfurni-Adjustable-Constellation-Headrest%EF%BC%88Red%EF%BC%89/dp/B08XVRGGGD?dchild=1&keywords=desk+chair&qid=1626257616&sr=8-161&linkCode=li2&tag=ishnualahi0c-21&linkId=852ecc102c8c499ae2469d2de4575d9d&language=en_GB&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B08XVRGGGD&Format=_SL160_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=ishnualahi0c-21&language=en_GB" ><p>JL Comfurni Gaming Chair<br><span style="color: white; font-weight: bolder;">99.99</span></p></a><img src="https://ir-uk.amazon-adsystem.com/e/ir?t=ishnualahi0c-21&language=en_GB&l=li2&o=2&a=B08XVRGGGD" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></li>
+    		document.getElementById("Hats").style.display = "none";
+    		document.getElementById("Jewellery").style.display = "block";
+    		document.getElementById("Mask").style.display = "none";
+    		
+    		document.getElementById("Trainers").style.display = "none";
+    		document.getElementById("Flags").style.display = "none";
+  		}
 
-			<li><a href="https://www.amazon.co.uk/Generic-Bands-JUNZHENG-Ergonomic-Computer/dp/B08DFGDPK7?dchild=1&keywords=desk+chair&qid=1626257671&sr=8-198&linkCode=li2&tag=ishnualahi0c-21&linkId=bc592c01a1c3ccf098f524d52c007425&language=en_GB&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B08DFGDPK7&Format=_SL160_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=ishnualahi0c-21&language=en_GB" ><p>Generic Bands Gaming Chair<br><span style="color: white; font-weight: bolder;">59.99</span></p></a><img src="https://ir-uk.amazon-adsystem.com/e/ir?t=ishnualahi0c-21&language=en_GB&l=li2&o=2&a=B08DFGDPK7" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></li>
+  		function MaskClick() {
+    		document.getElementById("Tshirt").style.display = "none";
+    		document.getElementById("PoloShirt").style.display = "none";
+    		document.getElementById("LongSleeveShirt").style.display = "none";
 
-			<li><a href="https://www.amazon.co.uk/Generic-Bands-High-Back-Adjustment-Black-Blue/dp/B08DF834VZ?dchild=1&keywords=desk+chair&qid=1626257707&sr=8-260&linkCode=li2&tag=ishnualahi0c-21&linkId=e9eeee0d60ffc0743517b2872cc55c85&language=en_GB&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B08DF834VZ&Format=_SL160_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=ishnualahi0c-21&language=en_GB" ><p>Generic Bands Gaming Chair<br><span style="color: white; font-weight: bolder;">99.99</span></p></a><img src="https://ir-uk.amazon-adsystem.com/e/ir?t=ishnualahi0c-21&language=en_GB&l=li2&o=2&a=B08DF834VZ" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></li>
+    		document.getElementById("Hats").style.display = "none";
+    		document.getElementById("Jewellery").style.display = "none";
+    		document.getElementById("Mask").style.display = "block";
+    		
+    		document.getElementById("Trainers").style.display = "none";
+    		document.getElementById("Flags").style.display = "none";
+  		}
 
-			<li><a href="https://www.amazon.co.uk/Yaheetech-Executive-Ergonomic-Adjustable-Computer/dp/B08NJ5WW92?dchild=1&keywords=desk+chair&qid=1626257707&sr=8-249&linkCode=li2&tag=ishnualahi0c-21&linkId=e6ec80a2765209c24e9202172706d9a5&language=en_GB&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B08NJ5WW92&Format=_SL160_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=ishnualahi0c-21&language=en_GB" ><p>Yaheetech Executive Chair<br><span style="color: white; font-weight: bolder;">79.99</span></p></a><img src="https://ir-uk.amazon-adsystem.com/e/ir?t=ishnualahi0c-21&language=en_GB&l=li2&o=2&a=B08NJ5WW92" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></li>
-			</ul>
+  		function TrainersClick() {
+    		document.getElementById("Tshirt").style.display = "none";
+    		document.getElementById("PoloShirt").style.display = "none";
+    		document.getElementById("LongSleeveShirt").style.display = "none";
 
-			<script>
-function myFunction() {
-    var input, filter, ul, li, a, i, txtValue;
-    input = document.getElementById("myInput");
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("myUL");
-    li = ul.getElementsByTagName("li");
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        txtValue = a.textContent || a.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-        } else {
-            li[i].style.display = "none";
-        }
-    }
-}
-</script>
+    		document.getElementById("Hats").style.display = "none";
+    		document.getElementById("Jewellery").style.display = "none";
+    		document.getElementById("Mask").style.display = "none";
+    		
+    		document.getElementById("Trainers").style.display = "block";
+    		document.getElementById("Flags").style.display = "none";
+  		}
 
-		</div>
-	</div>
-</div>
-</main>
-<footer>
-</footer>
-</body>
+  		function FlagsClick() {
+    		document.getElementById("Tshirt").style.display = "none";
+    		document.getElementById("PoloShirt").style.display = "none";
+    		document.getElementById("LongSleeveShirt").style.display = "none";
+
+    		document.getElementById("Hats").style.display = "none";
+    		document.getElementById("Jewellery").style.display = "none";
+    		document.getElementById("Mask").style.display = "none";
+    		
+    		document.getElementById("Trainers").style.display = "none";
+    		document.getElementById("Flags").style.display = "block";
+  		}
+
+		</script>
+	</body>
 </html>
